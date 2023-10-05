@@ -16,8 +16,8 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
-
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -164,4 +164,64 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+#logo img {
+    width: 61.09px;
+    height: 19px;
+    padding: 30px 50px;
+}
+.menu {
+    display: flex;
+    width: 328.601px;
+    padding: 0px 25px;
+    align-items: center;
+    gap: 68px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menu span:focus {
+    color: #0065FC;
+}
+.blue-bar {
+    width: 113px;
+    height: 2px;
+    flex-shrink: 0;
+    background: var(--Blue, #0065FC);
+    margin-bottom: 14px;
+}
+.headline {
+    display: flex;
+    height: 53px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+.headline h1 {
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+.headline p {
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 8px;
+}
+.main-container header { 
+    margin-bottom: 35px;
+}
+.main-container {
+    margin-top: 30px;
 }
