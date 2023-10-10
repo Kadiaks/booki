@@ -202,6 +202,10 @@ header {
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-bottom: 35px;
+    margin-left: 50px;
 }
 .headline h1 {
     font-family: Raleway;
@@ -209,6 +213,7 @@ header {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    align-self: stretch;
     margin-bottom: 8px;
 }
 .headline p {
@@ -220,8 +225,28 @@ header {
     margin-top: 8px;
 }
 .main-container header { 
+    margin-top: 30px;
     margin-bottom: 35px;
 }
 .main-container {
     margin-top: 30px;
+}
+.Search-bar {
+    display: flex;
+    width: 377px;
+    height: 49px;
+    align-items: center;
+    gap: 24px;
+    margin: 50px 35px;
+    border-radius: 15px;
+}
+.element Button/Search {
+    display: flex;
+    height: 49px;
+    padding: 15px 16px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid var(--Blue, #0065FC);
+    background: var(--Blue, #0065FC);
 }
