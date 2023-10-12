@@ -189,15 +189,9 @@ header {
     justify-content: space-evenly;
 }
 
-.menu span:focus {
-    color: #0065FC;
-}
-
-.blue-bar:hover {
+.menu a:hover {
     width: 113px;
     height: 2px;
-    flex-shrink: 0;
-    background: var(--Blue, #0065FC);
     margin-bottom: 14px;
 }
 
@@ -270,7 +264,7 @@ header {
     font-size: 17px;
 }
 .filterbar div {
-    border: 2px solid blue;
+    font-weight: bold;
     display: flex;
     height: 40px;
     padding: 4px 19px;
@@ -279,6 +273,11 @@ header {
     border-radius: 25px;
     border: 2px solid var(--grey-tint-2, #D9D9D9);
 }
+
+.filterbar span {
+    background: var(--blue-light, #DEEBFF);
+}
+
 .filterbar i {
     width: 22px;
     font-size: 22px;
@@ -302,17 +301,74 @@ header {
 main section .hebergements {
     display: flex;
     padding: 30px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
+    flex-direction: row;
     flex: 1 0 0;
-    align-self: stretch;
+    
     border-radius: 15px;
     background: var(--Grey, #F2F2F2);
 }
+
 main h2 {
     font-size: 22px;
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.hebergements-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.conteneur {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    image-resolution: 205px 120;
+}
+
+img {
+    width: 205px;
+    height: 120px;
+}
+.hebergements-cards .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+article .class .card {
+    margin-bottom: 15px;
+}
+.card-title {
+    font-size: 16px;
+    font-weight: 700px;
+    gap: 4px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 700px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 700px;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
 }
