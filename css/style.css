@@ -67,7 +67,6 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
 }
 
@@ -85,11 +84,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 30px;
 }
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
+    margin: 30px;
 }
 
 .populaires-cards img {
@@ -211,14 +211,13 @@ header {
 
 .search-bar {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     max-width: 377px;
-    gap: 24px;
+    gap: 20px;
     border-radius: 15px;
-    border: 1px solid #F2F2F2;
+    margin-top: 30px;
+   
     background: #FFF;
-    margin-top: 35px;
-    margin-bottom: 35px;
 }
 
 .search-bar span {
@@ -239,7 +238,7 @@ header {
 
 .search-bar input {
     display: flex;
-    font-size: 1em;
+    font-size: 1.2em;
     align-items: center;
     font-weight: 700;
     height: 45px;
@@ -311,24 +310,20 @@ header {
 }
 
 main {
-    margin: 50px;
-}
-
-nav {
-    margin: 0;
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .hebergements h2 {
     font-size: 2em;
     font-weight: 700;
-    margin-left: 15px;
-    justify-content: center;
+    margin-left: 30px;
 }
 
 .hebergements h3 {
     font-size: 1em;
     font-weight: 700;
-    gap: 4px 8px;
+    gap: 4px;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -341,10 +336,6 @@ nav {
     margin-right: 15px;
 }
 
-.hebergements .euro {
-    font-weight: 700;
-}
-
 .conteneur {
     display: grid;
     flex-direction: row;
@@ -354,56 +345,44 @@ nav {
 }
 
 .box {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-inline: 15px;
+    width: 230px;
 }
-
 article .card {
     background-color: #FFF;
 }
 
 .hebergements img {
-    min-width: 240px;
-    max-width: 240px;
+    min-width: 220px;
+    max-width: 220px;
     height: 120px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .hebergements-cards .card-content {
-    padding-left: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.card-title {
-    font-size: 2em;
-    font-weight: 700px;
-    gap: 4px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 8px;
 }
 
 .card-rating {
     margin-left: 15px;
 }
 
-.hebergements-cards .neutral-star {
-    color: var(--main-bg-color);
-}
-
 input {
-    margin-left: 15px;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 section .activités {
-    margin: 15px;
+   margin-top: 30px;
 }
 
 .activités h2 {
     font-size: 2em;
-    margin-left: 15px;
+    margin-left: 30px;
     margin-bottom: 30px;
 }
 
@@ -430,6 +409,5 @@ section .activités {
     display: flex;
     flex-direction: row;
     padding: 20px 20px;
-   
-    margin-bottom: 48px;
+    margin-bottom: 50px;
 }
