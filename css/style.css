@@ -362,8 +362,8 @@ article .card {
 }
 
 .hebergements img {
-    min-width: 220px;
-    max-width: 220px;
+    min-width: 240px;
+    max-width: 240px;
     height: 120px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
