@@ -159,8 +159,60 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (min-width: 320px) and (max-width: 767.98px) {
     /* ... */
+.search-bar button .fa-solid {
+        color: #FFF;
+}   
+
+.filterbar {
+    flex-direction: column;
+    overflow: auto;
+}
+
+.filterbar .span {
+    flex-direction: row;
+    align-items: center;
+}
+
+section .hebergements {
+    flex-direction: column;
+}
+
+h2 {
+    overflow: auto;
+}
+
+.conteneur {
+    overflow: auto;
+}
+
+.box {
+    width: 80px;
+    height: 100px;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.article {
+    flex-direction: column;
+    overflow: auto;
+}
+
+.populaires {
+    flex-direction: column;
+}
+
+.activités {
+    flex-direction: column;
+}
+
+.footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
 }
 
 header {
@@ -216,7 +268,6 @@ header {
     gap: 20px;
     border-radius: 15px;
     margin-top: 30px;
-   
     background: #FFF;
 }
 
