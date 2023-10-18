@@ -20,12 +20,12 @@
         <div id="logo">
             <img src="images/logo/Booki.png" alt="mon logo">
         </div>
-        <div>
+        <nav>
             <div class="menu">
                 <a href="#hebergements">Hébergements</a>
                 <a href="#activités">Activités</a>
             </div>
-        </div>
+        </nav>
     </header>
     <div class="main-container">
             <div class="headline">
@@ -37,7 +37,7 @@
                     <input type="text" value="Marseille, France">
                     <button>
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        Rechercher
+                        <span>Rechercher</span>
                     </button>
                 </form>
             <div class="filterbar">            
@@ -61,14 +61,14 @@
             </div>
             <div class="infobar">
                 <div>
-                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-light fa-circle-info"></i>
                     <span>Plus de 500 logements sont disponibles dans cette ville</span>
                 </div>
             </div>
     </div>
 
     <main>
-            <div class="hebergements-and-populaires">
+        <div class="hebergements-and-populaires">
             <section class="hebergements">
                     <h2>Hébergements à Marseille</h2>
                 <div class="conteneur">
@@ -206,7 +206,9 @@
                     </div>
                 </div>
                 <div>
-                    <input type="submit" value="Afficher plus">
+                    <a href="#">
+                        <span>Afficher plus</span>
+                    </a>
                 </div>
             </section>
             <section class="populaires">
@@ -282,7 +284,7 @@
             <div class="activités">
                 <h2 class="section-title">Activités à Marseille</h2>
                 <div class="conteneur">
-                    <div>
+                    <div class="box">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/activites/reno-laithienne.jpg"
@@ -295,7 +297,7 @@
                             </article>
                         </a>
                     </div>
-                    <div>
+                    <div class="box">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/activites/paul-hermann.jpg" alt="Image montrant une belle vue du Fort">
@@ -307,7 +309,7 @@
                             </article>
                         </a>
                     </div>
-                    <div>
+                    <div class="box">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image montrant une belle vue du parc">
@@ -319,7 +321,7 @@
                             </article>
                         </a>
                     </div>
-                    <div>
+                    <div class="box">
                         <a href="#">
                             <article class="card">
                                 <img src="./images/activites/florian-wehde.jpg"
@@ -335,39 +337,32 @@
                 </div>
             </div>
         </section>
-        </div>
     </main>
 
     <footer>
         <div class="conteneur">
-            <div class="À propos">
+            <nav class="À propos">
                 <h3>À propos</h3>
                 <a href="#">
-                    <ul>
-                        <li>Fonctionnement du site</li>
-                        <li>Conditions générales</li>
-                        <li>Données et confidentialité</li>
-                    </ul>
+                    Fonctionnement du site
+                    Conditions générales
+                    Données et confidentialité
                 </a>
-            </div>
-            <div class="Nos hébergements">
+            </nav>
+            <nav class="Nos hébergements">
                 <h3>Nos hébergements</h3>
                 <a href="#">
-                    <ul>
-                        <li>Charte qualité</li>
-                        <li>Proposer votre hôtel</li>
-                    </ul>
+                    Charte qualité
+                    Proposer votre hôtel
                 </a>
-            </div>
-            <div class="Assistance">
+            </nav>
+            <nav class="Assistance">
                 <h3>Assistance</h3>
                 <a href="#">
-                    <ul>
-                        <li>Centre d'aide</li>
-                        <li>Nous contacter</li>
-                    </ul>
+                    Centre d'aide
+                    Nous contacter
                 </a>
-            </div>
+            </nav>
         </div>
     </footer>
 

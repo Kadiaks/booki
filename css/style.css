@@ -17,11 +17,14 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    margin: 50px;
+    align-items: flex-start;
+    gap: 35px;
 }
 .main-container {
     width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
 }
 
@@ -125,7 +128,7 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen AND (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -159,14 +162,31 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (min-width: 320px) and (max-width: 767.98px) {
+@media screen AND (max-width: 767px) {
     /* ... */
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
 .search-bar button .fa-solid {
-        color: #FFF;
+    display: flex;
+    border-radius: 15px;
+    color: #FFF;
 }   
 
+.search-bar button .span {
+    display: none;
+}
+
 .filterbar {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
     overflow: auto;
 }
 
@@ -188,10 +208,16 @@ h2 {
 }
 
 .box {
-    width: 80px;
-    height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    flex-wrap: wrap;
     flex-direction: column;
     overflow: auto;
+}
+
+.img {
+    min-width: 90px;
+    max-width: 90px;
 }
 
 .article {
@@ -225,23 +251,18 @@ header {
 #logo img {
     width: 62px;
     height: 19px;
-    padding: 30px 50px;
 }
 
-.menu {
+nav menu {
     display: flex;
-    width: 328px;
-    padding: 0px 25px;
-    align-items: center;
-    gap: 68px;
     flex-direction: row;
-    justify-content: space-evenly;
+    padding: 0px 25px;
+    gap: 68px;
+    float: right;
 }
 
 .menu a {
-    width: 113px;
     height: 5px;
-    margin-bottom: 14px;
     padding: 25px 0;
 }
 
@@ -251,10 +272,6 @@ header {
     border-left: none;
     border-right: none;
     color: #0065FC;
-}
-
-.menu span {
-    padding: 25px 0;
 }
 
 .main-header {
@@ -273,16 +290,18 @@ header {
 
 .search-bar span {
     display: flex;
-    background-color: #F2F2F2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .search-bar .fa-solid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     color: black;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     width: 50px;
     height: 45px;
 }
@@ -306,6 +325,10 @@ header {
     border-radius: 0px 15px 15px 0px;
     border: 1px solid #0065FC;
     background: #0065FC;
+}
+
+.search-bar button .fa-solid {
+    display: none;
 }
 
 .filterbar {
@@ -336,10 +359,6 @@ header {
     background-color: #DEEBFF;
 }
 
-.filterbar span {
-    background: var(--blue-light, #DEEBFF);
-}
-
 .filterbar i {
     width: 22px;
     font-size: 22px;
@@ -349,20 +368,16 @@ header {
     font-size: 16px;
     font-weight: 400;
     gap: 10px;
-    margin-top: 35px;
-    margin-bottom: 35px;
 }
+
 .infobar i {
     align-items: center;
     align-self: stretch;
     font-size: 24px;
+    width: 24px;
+    height: 24px;
     background-color: #F2F2F2;
-    border: black;
-}
-
-main {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    border: #D9D9D9;
 }
 
 .hebergements h2 {
@@ -390,24 +405,28 @@ main {
 .conteneur {
     display: grid;
     flex-direction: row;
-    grid-template-columns: 250px 250px 250px;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
 }
 
 .box {
+    display: grid;
+    grid-row: auto;
+    flex-wrap: wrap;
     margin-bottom: 20px;
-    margin-inline: 15px;
-    width: 230px;
+    width: 100%;
 }
+
 article .card {
     background-color: #FFF;
 }
 
 .hebergements img {
-    min-width: 220px;
-    max-width: 220px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     height: 120px;
+    object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -429,17 +448,20 @@ input {
 
 section .activités {
    margin-top: 30px;
+   width: 100%;
 }
 
 .activités h2 {
     font-size: 2em;
     margin-left: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .activités img {
-    width: 250px;
-    height: 300px;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .card-title {
@@ -447,9 +469,14 @@ section .activités {
     font-weight: 700;
 }
 
-.activités .conteneur {
+.activités .box {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 0 0;
 }
 
 .activités h3 {
@@ -458,7 +485,18 @@ section .activités {
 
 .footer {
     display: flex;
+    width: 100%;
+    align-items: center;
     flex-direction: row;
     padding: 20px 20px;
-    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: space around;
+    gap: 15px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
