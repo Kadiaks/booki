@@ -243,8 +243,8 @@ h2 {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 64px;
 }
 
@@ -253,17 +253,15 @@ header {
     height: 19px;
 }
 
-nav menu {
+.menu {
     display: flex;
     flex-direction: row;
-    padding: 0px 25px;
-    gap: 68px;
-    float: right;
-}
-
-.menu a {
-    height: 5px;
-    padding: 25px 0;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+    margin-left: 850px;
+    gap: 65px;
+    height: 19px;
 }
 
 .menu a:hover {
@@ -274,18 +272,37 @@ nav menu {
     color: #0065FC;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
 .main-header {
     display: flex;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+}
+
+.headline h1 {
+    font-size: 2em;
+}
+
+.headline p {
+    font-size: 1em;
+    gap: 8px;
 }
 
 .search-bar {
     display: flex;
     align-items: baseline;
     max-width: 377px;
-    gap: 20px;
     border-radius: 15px;
-    margin-top: 30px;
     background: #FFF;
+    display: flex;
 }
 
 .search-bar span {
@@ -312,6 +329,7 @@ nav menu {
     align-items: center;
     font-weight: 700;
     height: 45px;
+    gap: 20px;
     border: none;
 }
 
@@ -338,6 +356,7 @@ nav menu {
     font-weight: 700;
     gap: 15px;
 }
+
 .filterbar span {
     display: flex;
     font-size: 1em;
@@ -365,17 +384,16 @@ nav menu {
 }
 
 .infobar {
-    font-size: 16px;
     font-weight: 400;
     gap: 10px;
 }
 
-.infobar i {
+.infobar .fa-solid {
     align-items: center;
-    align-self: stretch;
-    font-size: 24px;
-    width: 24px;
-    height: 24px;
+    color: blue;
+    font-size: 42px;
+    width: 42px;
+    height: 42px;
     background-color: #F2F2F2;
     border: #D9D9D9;
 }
@@ -391,7 +409,6 @@ nav menu {
     font-weight: 700;
     gap: 4px;
     margin-left: 15px;
-    margin-right: 15px;
 }
 
 .hebergements p {
@@ -404,17 +421,16 @@ nav menu {
 
 .conteneur {
     display: grid;
-    flex-direction: row;
-    width: 100%;
-    gap: 30px;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .box {
-    display: grid;
-    grid-row: auto;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    width: 100%;
+    width: 100px;
+    height: 120px;
 }
 
 article .card {
@@ -457,6 +473,16 @@ section .activités {
     padding-bottom: 30px;
 }
 
+.carte {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 150px 150px 150px 150px;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    gap: 20px;
+}
+
 .activités img {
     width: 100%;
     height: 200px;
@@ -467,16 +493,6 @@ section .activités {
 .card-title {
     font-size: 1em;
     font-weight: 700;
-}
-
-.activités .box {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-    justify-content: space-around;
-    align-items: center;
-    flex: 1 0 0;
 }
 
 .activités h3 {
