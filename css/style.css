@@ -36,6 +36,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: 700;
 }
 
 .card {
@@ -61,10 +62,169 @@ a {
     color: var(--main-bg-color)
 }
 
+
+/****** Header ***********/
+.main-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    justify-content: space-around;
+    max-width: 1400px;
+}
+
+#logo {
+    width: 100%;
+}
+
+#logo img {
+    width: 62px;
+    height: 19px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+    margin-left: 850px;
+    gap: 65px;
+    height: 19px;
+}
+
+.menu a {
+    padding: 15px 0;
+}
+
+.menu a:hover {
+    border: 2px solid #0065FC;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: #0065FC;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.headline h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.headline p {
+    font-size: 1em;
+    gap: 8px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 377px;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.search-bar span {
+    display: flex;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search-bar .fa-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50px;
+    height: 45px;
+}
+
+.search-bar input {
+    display: flex;
+    font-size: 1.2em;
+    align-items: center;
+    font-weight: 700;
+    height: 45px;
+    border: none;
+    padding: 0 15px;
+    margin-bottom: 0;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar button {
+    color: white;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    font-weight: 700;
+    height: 45px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid #0065FC;
+    background: #0065FC;
+}
+
+.search-bar button .fa-solid {
+    display: none;
+}
+
+.filterbar {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-weight: 700;
+    gap: 15px;
+}
+
+.filterbar span {
+    display: flex;
+    font-size: 1em;
+}
+
+.filterbar button {
+    font-weight: bold;
+    display: flex;
+    height: 40px;
+    padding: 4px 19px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    background-color: white;
+}
+
+.filterbar button:hover {
+    background-color: #DEEBFF;
+}
+
+.infobar i {
+    display: flex;
+    width: 22px;
+    font-size: 22px;
+    content: #0065FC;
+    border-radius: 50%;
+}
+
+.infobar {
+    display: flex;
+    font-weight: 400;
+    gap: 10px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .hebergements-and-populaires section {
@@ -76,7 +236,65 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blueviolet;
 }
+
+.hebergements h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.hebergements .conteneur {
+    display: grid;
+    grid-template-columns: 265px 265px 265px;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 0;
+    gap: 30px;
+}
+
+.hebergements article {
+    height: 235px;
+    box-sizing: border-box;
+    border: 3px solid red;
+}
+
+.hebergements img {
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+}
+
+.hebergements .card-content {
+    width: 100%;
+    padding-left: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements .card-title {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements .card-subtitle .euro {
+    gap: 0;
+}
+
+.hebergements .card-rating {
+    margin-bottom: 5px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -122,6 +340,83 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+
+/****** Activites ***********/
+.activites {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.activites h2 {
+    margin: 30px;
+}
+
+.activites-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+    border: 2px solid greenyellow;
+}
+
+.activites .card {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    width: 310px;
+    border-radius: 0;
+    padding: 0;
+    border: 2px solid #0065FC;
+}
+
+.activites-cards img {
+    width: 100%;
+    gap: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-sizing: border-box;
+    height: 400px;
+    border: 2px solid red;
+}
+
+.activites-cards .card-content {
+    padding-left: 15px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.activites-cards .card-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/****** Footer ***********/
+footer {
+    width: 100%;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    align-self: stretch;
+}
+
+h3 {
+    font-size: 1,5em;
+}
+
+div .class {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1em;
+    width: 100%;
+    flex: 100;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -203,316 +498,4 @@ h2 {
     overflow: auto;
 }
 
-.conteneur {
-    overflow: auto;
-}
-
-.box {
-    min-width: 100px;
-    max-width: 100px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    overflow: auto;
-}
-
-.img {
-    min-width: 90px;
-    max-width: 90px;
-}
-
-.article {
-    flex-direction: column;
-    overflow: auto;
-}
-
-.populaires {
-    flex-direction: column;
-}
-
-.activités {
-    flex-direction: column;
-}
-
-.footer {
-    flex-direction: column;
-    flex-wrap: wrap;
-    overflow: auto;
-}
-
-}
-
-header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 64px;
-}
-
-#logo img {
-    width: 62px;
-    height: 19px;
-}
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1em;
-    margin-left: 850px;
-    gap: 65px;
-    height: 19px;
-}
-
-.menu a:hover {
-    border: 2px solid #0065FC;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    color: #0065FC;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-
-.main-header {
-    display: flex;
-}
-
-.headline {
-    display: flex;
-    flex-direction: column;
-}
-
-.headline h1 {
-    font-size: 2em;
-}
-
-.headline p {
-    font-size: 1em;
-    gap: 8px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: baseline;
-    max-width: 377px;
-    border-radius: 15px;
-    background: #FFF;
-    display: flex;
-}
-
-.search-bar span {
-    display: flex;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-.search-bar .fa-solid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: #F2F2F2;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    width: 50px;
-    height: 45px;
-}
-
-.search-bar input {
-    display: flex;
-    font-size: 1.2em;
-    align-items: center;
-    font-weight: 700;
-    height: 45px;
-    gap: 20px;
-    border: none;
-}
-
-.search-bar button {
-    color: white;
-    display: flex;
-    padding: 15px 15px;
-    align-items: center;
-    font-weight: 700;
-    height: 45px;
-    border-radius: 0px 15px 15px 0px;
-    border: 1px solid #0065FC;
-    background: #0065FC;
-}
-
-.search-bar button .fa-solid {
-    display: none;
-}
-
-.filterbar {
-    display: flex;
-    height: 50px;
-    align-items: center;
-    font-weight: 700;
-    gap: 15px;
-}
-
-.filterbar span {
-    display: flex;
-    font-size: 1em;
-}
-
-.filterbar button {
-    font-weight: bold;
-    display: flex;
-    height: 40px;
-    padding: 4px 19px;
-    align-items: center;
-    gap: 10px;
-    border-radius: 25px;
-    border: 2px solid #D9D9D9;
-    background-color: white;
-}
-
-.filterbar button:hover {
-    background-color: #DEEBFF;
-}
-
-.filterbar i {
-    width: 22px;
-    font-size: 22px;
-}
-
-.infobar {
-    font-weight: 400;
-    gap: 10px;
-}
-
-.infobar .fa-solid {
-    align-items: center;
-    color: blue;
-    font-size: 42px;
-    width: 42px;
-    height: 42px;
-    background-color: #F2F2F2;
-    border: #D9D9D9;
-}
-
-.hebergements h2 {
-    font-size: 2em;
-    font-weight: 700;
-    margin-left: 30px;
-}
-
-.hebergements h3 {
-    font-size: 1em;
-    font-weight: 700;
-    gap: 4px;
-    margin-left: 15px;
-}
-
-.hebergements p {
-    font-size: 1em;
-    font-weight: 400;
-    gap: 8px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.conteneur {
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.box {
-    width: 100px;
-    height: 120px;
-}
-
-article .card {
-    background-color: #FFF;
-}
-
-.hebergements img {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.hebergements-cards .card-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.card-rating {
-    margin-left: 15px;
-}
-
-input {
-    margin-left: 30px;
-    margin-bottom: 30px;
-}
-
-section .activités {
-   margin-top: 30px;
-   width: 100%;
-}
-
-.activités h2 {
-    font-size: 2em;
-    margin-left: 30px;
-    padding-bottom: 30px;
-}
-
-.carte {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-rows: 150px 150px 150px 150px;
-    justify-content: space-around;
-    align-items: center;
-    height: 150px;
-    gap: 20px;
-}
-
-.activités img {
-    width: 100%;
-    height: 200px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.card-title {
-    font-size: 1em;
-    font-weight: 700;
-}
-
-.activités h3 {
-    margin: 15px;
-}
-
-.footer {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    flex-direction: row;
-    padding: 20px 20px;
-}
-
-nav {
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    align-items: space around;
-    gap: 15px;
-    flex: 1 0 0;
-    align-self: stretch;
 }
