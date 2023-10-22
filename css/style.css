@@ -461,7 +461,7 @@ div .class {
 body {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
 }
 
 header {
@@ -471,7 +471,7 @@ header {
     align-items: center;
     align-self: stretch;
     flex-wrap: wrap;
-    width: 60%;
+    width: 50%;
     border: 3px solid blueviolet;
 }
 
@@ -502,6 +502,7 @@ header {
     flex-direction: column;
     margin: 30px 20px;
     gap: 35px;
+    
     border: 3px solid black;
 }
     
@@ -537,7 +538,7 @@ header {
 
 .search-bar button .fa-solid {
     display: inline-flex;
-    width: 33px;
+    
     height: 29px;
     padding: 10px;
     border-radius: 15px;
@@ -621,23 +622,32 @@ header {
 .filterbar {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
-    overflow: auto;
+    width: 50%;
+    border: 3px solid blue;
 }
 
 .filterbar .span {
+    display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: flex-start;
 }
 
+.filterbar button {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid yellow;
+}
 .hebergements {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 65%;
+    width: 50%;
 }
 
 .hebergements h2 {
@@ -647,9 +657,9 @@ header {
 }
 
 .hebergements .conteneur {
-    display: grid;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 225px 225px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 0;
     gap: 30px;
