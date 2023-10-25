@@ -4,7 +4,46 @@
 /* Small devices (phones, less than 768px) */
 @media screen AND (max-width: 767px) {
     /* ... */
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+/****** Header ***********/   
+.main-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    margin-left: 50px;
+    height: 120px;
+    border: 2px solid blueviolet;
+}
+
+#logo {
+    max-width: 62px;
+    height: 19px;
+    padding: 30px;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 667px;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.menu a {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
     
 .menu a:hover {
     border: 2px solid #0065FC;
@@ -17,95 +56,96 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    margin: 30px 20px;
-    gap: 35px;
+    margin-left: 50px;
+    padding: 0 20px;
+    margin-top: 0;
     border: 3px solid black;
 }
     
 .headline {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
-    border: 2px solid green;
 }
 
 .headline h1 {
-    border: 2px solid gray;
-
+    margin-top: 0;
+    align-self: stretch;
+    font-size: 22px;
 }
 
 .headline p {
-    border: 2px solid yellow;
-}
-    
-.search-bar {
     display: flex;
     flex-direction: row;
-    height: 49px;
-    border: 2px solid red;
+    margin-top: 0;
+    align-items: flex-start;
+    align-self: stretch;
 }
 
-.search-bar .span .fa-solid {
-    display: flex;
+.search-bar {
+    display: inline-flex;
     flex-direction: row;
-    border: 3px solid yellow;
+    max-width: 366px;
 }
 
 .search-bar button .fa-solid {
-    display: inline-flex;
-    
-    height: 29px;
+    display: flex;
+    height: 25px;
     padding: 10px;
     border-radius: 15px;
     background-color: #0065FC;
-    border: 3px solid yellowgreen;
+    margin: 0;
 }
 
 .search-bar button {
     background: none;
     border: none;
+    padding: 0;
 }
-    
-.search-bar span {
+
+.search-bar button span {
     display: none;
 }
     
 .filterbar {
     display: flex;
-    align-items: center;
-    font-weight: 700;
-    gap: 15px;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 100%;
+    height: 162px;
 }
     
-    .filterbar span {
-        display: flex;
-        font-size: 1em;
-    }
+.filterbar span {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    font-size: 1,5em;
+    border: 2px solid black;
+}
     
-    .filterbar button {
-        font-weight: bold;
-        display: flex;
-        height: 40px;
-        padding: 4px 19px;
-        align-items: center;
-        gap: 10px;
-        border-radius: 25px;
-        border: 2px solid #D9D9D9;
-        background-color: white;
-    }
+.filterbar button {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    border-radius: 25px;
+    width: 195px;
+    height: 50px;
+    border: 2px solid #D9D9D9;
+    background-color: white;
+}
     
-    .filterbar button:hover {
-        background-color: #DEEBFF;
-    }
+.filterbar button:hover {
+    background-color: #DEEBFF;
+}
     
-    .infobar i {
-        display: flex;
-        width: 22px;
-        font-size: 22px;
-        content: #0065FC;
-        border-radius: 50%;
-    }
+.infobar i {
+    display: flex;
+    width: 22px;
+    font-size: 22px;
+    content: #0065FC;
+    border-radius: 50%;
+}
     
     .infobar {
         display: flex;
