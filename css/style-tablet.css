@@ -1,8 +1,14 @@
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen AND (max-width: 1024px) {
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
     body {
         width: 100%;
+        background-color: blueviolet;
     }
     
     /****** Header ***********/   
@@ -26,8 +32,6 @@
         align-items: center;
         margin-top: 15px;
         margin-right: 50px;
-        margin-left: 410px;
-        font-size: 1em;
     }
     
     .menu a:hover {
