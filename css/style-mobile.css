@@ -11,42 +11,47 @@ html, body {
 
 body {
     display: block;
+    margin: auto;
     background-color: aqua;
 }
 
 /****** Header ***********/   
 .main-header {
-    width: 100%;
+    width: 93%;
     display: flex;
     flex-direction: column;
-    justify-content: normal;
+    justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    margin: 0 20px;
     height: 120px;
     border: 2px solid blueviolet;
 }
 
 #logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     max-width: 62px;
     height: 19px;
     padding: 30px;
     margin: 0;
+    border: 2px solid red;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-    width: 667px;
+    align-items: stretch;
+    padding-top: 0;
     margin-left: 0;
     margin-top: 0;
 }
 
 .menu a {
     display: flex;
-    justify-content: space-evenly;
-    padding: 0;
+    align-items: stretch;
+    padding: 0 20px;
+    border: 2px solid greenyellow;
 }
     
 .menu a:hover {
@@ -58,11 +63,10 @@ body {
 }
     
 .main-container {
+    width: 93%;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    padding: 0 20px;
-    margin-top: 0;
+    margin: 35px 20px;
     border: 3px solid black;
 }
     
@@ -89,16 +93,17 @@ body {
 .search-bar {
     display: inline-flex;
     flex-direction: row;
-    max-width: 366px;
+    max-width: 310px;
 }
 
 .search-bar button .fa-solid {
     display: flex;
     height: 25px;
-    padding: 10px;
+    padding: 9px 10px;
     border-radius: 15px;
+    width: 25px;
+    flex-shrink: 0;
     background-color: #0065FC;
-    margin: 0;
 }
 
 .search-bar button {
@@ -114,7 +119,7 @@ body {
 .filterbar {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-items: flex-start;
     width: 100%;
     height: 162px;
 }
@@ -124,6 +129,7 @@ body {
     flex-direction: row;
     align-content: flex-start;
     font-size: 1,5em;
+    margin-left: 0;
     border: 2px solid black;
 }
     
@@ -131,10 +137,9 @@ body {
     font-size: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: center;
+    align-items: self-start;
     border-radius: 25px;
-    width: 195px;
-    height: 50px;
     border: 2px solid #D9D9D9;
     background-color: white;
 }
@@ -203,7 +208,7 @@ body {
 }
 .hebergements {
     display: block;
-    
+    width: auto;
     flex-wrap: wrap;
 }
 
@@ -220,6 +225,12 @@ body {
     justify-content: center;
     padding-bottom: 0;
     gap: 30px;
+}
+
+.hebergements .card {
+    display: block;
+    grid-template-columns: 0,10fr 0,10fr 0,10fr;
+    height: 260px;
 }
 
 }
