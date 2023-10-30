@@ -22,13 +22,10 @@ body {
     margin: auto;
     align-items: flex-start;
     gap: 35px;
-    border: 5px solid black;
-    background-color: red;
 }
 
 .main-container {
     box-sizing: border-box;
-    border: 3px solid green;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -127,7 +124,7 @@ a {
     align-items: center;
     max-width: 335px;
     border-radius: 15px;
-    height: 55px;
+    height: 45px;
     background: #FFF;
 }
 
@@ -146,7 +143,7 @@ a {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     width: 50px;
-    height: 55px;
+    height: 45px;
 }
 
 .search-bar input {
@@ -155,7 +152,7 @@ a {
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    height: 55px;
+    height: 45px;
     width: 185px;
     border: none;
     padding: 0 15px;
@@ -172,7 +169,7 @@ a {
     flex-direction: row;
     align-items: center;
     font-weight: 700;
-    height: 55px;
+    height: 45px;
     border-radius: 0px 15px 15px 0px;
     border: 1px solid #0065FC;
     background: #0065FC;
@@ -192,7 +189,7 @@ a {
 .filterbar span {
     display: flex;
     font-size: 2em;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .filterbar button {

@@ -12,6 +12,7 @@ html, body {
 body {
     display: block;
     margin: auto;
+    max-width: 767px;
     background-color: aqua;
 }
 
@@ -41,7 +42,8 @@ body {
 .menu {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    justify-content: space-between;
+    align-content: stretch;
     padding-top: 0;
     margin-left: 0;
     margin-top: 0;
@@ -67,7 +69,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 35px 20px;
-    border: 3px solid black;
+    border: 3px solid red;
 }
     
 .headline {
@@ -94,6 +96,7 @@ body {
     display: inline-flex;
     flex-direction: row;
     max-width: 310px;
+    height: 45px;
 }
 
 .search-bar button .fa-solid {
@@ -102,7 +105,6 @@ body {
     padding: 9px 10px;
     border-radius: 15px;
     width: 25px;
-    flex-shrink: 0;
     background-color: #0065FC;
 }
 
@@ -119,9 +121,7 @@ body {
 .filterbar {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     width: 100%;
-    height: 162px;
 }
     
 .filterbar span {
@@ -140,6 +140,7 @@ body {
     justify-content: center;
     align-items: self-start;
     border-radius: 25px;
+    font-size: 16px;
     border: 2px solid #D9D9D9;
     background-color: white;
 }
@@ -206,31 +207,158 @@ body {
     align-content: center;
     border: 2px solid yellow;
 }
+
+
+/****** Main ***********/
+main {
+    margin: 35px 0;
+    width: 100%;
+}
+
 .hebergements {
-    display: block;
-    width: auto;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
 }
 
 .hebergements h2 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    padding-left: 0;
+    margin: 20px O;
 }
 
 .hebergements .conteneur {
     display: block;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 0;
-    gap: 30px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0;
+    padding-bottom: 20px;
 }
 
 .hebergements .card {
     display: block;
     grid-template-columns: 0,10fr 0,10fr 0,10fr;
-    height: 260px;
+    height: 250px;
+    margin-bottom: 15px;
+    margin: 15px 20px;
+}
+
+.populaires {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.populaires-title {
+    display: flex;
+    margin: 20px;
+}
+
+.populaires-cards {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid blueviolet;
+}
+
+.populaires .card {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 20px;
+    margin-bottom: 15px;
+    border: 2px solid green;
+}
+
+.populaires-cards img {
+    display: flex;
+    width: 100%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.populaires-cards .card-rating {
+    margin-top: 45px;
+    margin-bottom: 5px;
+}
+
+.activites {
+    display: flex;
+    flex-direction: column;
+}
+
+.activites-cards {
+    display: grid;
+    grid-template-columns: 0.20fr 0.20fr 0.20fr 0.20fr;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 20px;
+    border: 2px solid blue;
+}
+
+.activites .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 265px;
+    margin: 0 20px;
+    border: 2px solid red;
+}
+
+.activites .card img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+}
+
+
+/****** Footer ***********/
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.conteneur {
+    flex: 100;
+    background-color: #F2F2F2;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+    width: 90%;
+}
+
+.footer-box h3 {
+    margin-bottom: 0;
+}
+
+.footer-box ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-bottom: 15px;
 }
 
 }
