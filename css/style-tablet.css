@@ -33,6 +33,7 @@
     .menu {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         padding-top: 15px;
     }
@@ -63,11 +64,9 @@
 
     .filterbar {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
         border: 2px solid greenyellow;
-        
     }
 
     .filterbar span {
@@ -78,6 +77,13 @@
         font-weight: 600;
     }
 
+    .filterbar .bouton {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
     .filterbar button {  
         display: flex;
         flex-direction: row;
@@ -91,9 +97,7 @@
 
     /****** Hebergements And Populaires ***********/
     main {
-        width: 90%;
-        margin-left: 50px;
-        margin-right: 50px;
+        width: 100%;
     }
     
     .hebergements-and-populaires {
@@ -107,7 +111,6 @@
     .hebergements .conteneur {
         padding: 0 30px;
         padding-bottom: 30px;
-        margin: 0;
     }
 
     .hebergements h2 {
@@ -116,7 +119,7 @@
     
     .hebergements .card {
         display: grid;
-        grid-template-columns: 0,30fr 0,30fr 0,30fr;
+        grid-template-columns: 0,25fr 0,25fr 0,25fr;
         height: 260px;
     }
 
@@ -157,8 +160,8 @@
     
     .activites-cards {
         display: grid;
-        grid-template-columns:  22% 22% 22% 22%;
-        max-width: 93%;
+        grid-template-columns: 0,15fr 0,15fr 0,15fr 0,15fr;
+        width: 100%;
         padding: 0 30px;
         gap: 30px;
         border: 2px solid yellow;
@@ -186,7 +189,7 @@
     footer {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -201,7 +204,7 @@
         flex-direction: column;
         align-items: flex-start;
         padding-left: 30px;
-        width: 90%;
+        width: 100%;
     }
     
     .footer-box h3 {
