@@ -70,7 +70,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 93%;
+    width: 90%;
     height: 64px;
     margin-left: 50px;
     margin-right: 50px;
@@ -96,7 +96,7 @@ a {
 }
 
 .menu a:hover {
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
     color: #0065FC;
 }
 
@@ -104,7 +104,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    width: 93%;
+    width: 90%;
 }
 
 .headline h1 {
@@ -209,7 +209,7 @@ a {
     gap: 10px;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 .filterbar .fa-solid {
@@ -248,7 +248,7 @@ a {
 
 /****** Hebergements And Populaires ***********/
 main {
-    margin: 50px;
+    margin: 0 50px;
 }
 
 .hebergements-and-populaires {
@@ -260,6 +260,12 @@ main {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     box-sizing: border-box;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /****** Hebergements ***********/
@@ -279,7 +285,7 @@ main {
 
 .hebergements .conteneur {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 30% 30% 30%;
     padding: 30px;
     padding-bottom: 30px;
     gap: 30px;
@@ -301,6 +307,7 @@ main {
 
 .hebergements .card-content {
     width: 100%;
+    height: 118px;
     padding-left: 15px;
     flex-direction: row;
     justify-content: space-between;
@@ -337,12 +344,12 @@ main {
 .populaires-cards .card {
     display: flex;
     margin: 30px;
-    height: 156px;
+    height: 170px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 156px;
+    height: 170px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -354,6 +361,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    height: 130px;
 }
 
 .populaires-cards .card-title {
@@ -382,17 +390,17 @@ main {
     display: flex;
     justify-content: flex-start;
     width: 94%;
+    height: auto;
     padding: 0 30px;
     gap: 30px;
-    border: 4px solid red;
 }
 
 .activites-cards a {
     display: flex;
     flex-direction: column;
     width: 25%;
-    height: 365px;
-    border: 2px solid yellow;
+    height: 435px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
 }
 
 .activites .card {
@@ -402,9 +410,8 @@ main {
 .activites-cards img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    box-sizing: border-box;
     width: 100%;
-    height : 290px;
+    height : 365px;
     object-fit: cover;
 }
 
@@ -412,6 +419,7 @@ main {
     padding-left: 15px;
     display: flex;
     box-sizing: border-box;
+    height: 65px;
 }
 
 .activites-cards .card-title {

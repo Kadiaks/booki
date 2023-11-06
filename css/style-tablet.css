@@ -10,7 +10,7 @@
         width: 100%;
         max-width: 1024px;
         margin: auto;
-        background-color: violet;
+        background-color: fuchsia;
     }
 
     
@@ -101,6 +101,12 @@
         flex-direction: column;
     }
 
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .hebergements {
         width: 90%;
     }
@@ -176,17 +182,14 @@
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        height: 260px;
-        width: 23%;
+        height: 275px;
         object-fit: cover;
+        
     }
     
     .activites-cards img {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        box-sizing: border-box;
-        
-        height: 185px;
+        width: 100%;
+        height: 205px;
         object-fit: cover;
     }
 
