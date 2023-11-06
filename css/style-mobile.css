@@ -179,10 +179,17 @@ main {
     width: 95%;
 }
 
+.hebergements-and-populaires section {
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
 .hebergements {
+    background-color: white;
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: 2px solid green;
 }
 
 .hebergements h2 {
@@ -195,6 +202,9 @@ main {
     display: block;
     box-sizing: border-box;
     width: 100%;
+    padding: 0;
+    padding-bottom: 20px;
+    background-color: var(#0065FC);
 }
 
 .hebergements .card {
@@ -209,31 +219,33 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 35px;
+    margin: 35px 0;
 }
 
 .populaires-title {
     display: flex;
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .populaires-cards {
     display: block;
     box-sizing: border-box;
     width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
 }
 
 .populaires .card {
     display: flex;
     flex-direction: row;
-    padding: 0;
+    margin: 0;
     margin-bottom: 15px;
 }
 
 .populaires-cards img {
     display: flex;
     width: 100%;
-    height: 136px;
+    height: auto;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -252,15 +264,21 @@ main {
 .activites {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    border: 3px solid blue;
+    width: 99%;
+}
+
+.activites h2 {
+    margin: 30px 10px;
+    margin-top: 0;
 }
 
 .activites-cards {
     display: block;
-    width: 90%;
+    width: 98%;
     margin-bottom: 0;
-    padding-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
 }
 
 .activites-cards a {
@@ -268,8 +286,7 @@ main {
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    max-height: 255px;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 .activites-cards img {
@@ -282,23 +299,24 @@ main {
 }
 
 
-
 /****** Footer ***********/
 footer {
     display: flex;
     flex-direction: column;
-    width: 95%;
-    margin: 35px 20px;
+    width: 97%;
+    margin: 35px 30px;
 }
 
 .conteneur {
     display: block;
+    width: 95%;
     background-color: #F2F2F2;
 }
 
 .footer-box {
     display: block;
-    width: 91%;
+    width: 100%;
+    padding-left: 0;
     border: 2px solid blueviolet;
 }
 
