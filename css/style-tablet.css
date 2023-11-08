@@ -99,19 +99,16 @@
     
     .hebergements-and-populaires {
         flex-direction: column;
-    }
-
-    .boxes {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .hebergements {
         width: 90%;
     }
 
-    .hebergements .conteneur {
+    .id .hebergements {
+        display: flex;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .hebergements .container {
         display: grid;
         grid-template-columns: 0.35fr 0.35fr 0.35fr;
         justify-content: space-between;
@@ -125,11 +122,14 @@
 
     .hebergements .card {
         width: 100%;
-        height: 255px;
+        height: 233px;
+    }
+
+    .hebergements-cards .card-txt {
+        height: 92px;
     }
     
-    .populaires {
-        width: 90%;
+    .id .populaires {
         margin-top: 50px;
     }
 
@@ -137,12 +137,12 @@
         display: flex;
         flex-direction: row;
         margin: 0 30px;
-        margin-bottom: 30px;
         gap: 20px;
     }
 
     .populaires-cards a {
         width: 45%;
+        height: 195px;
     }
 
     .populaires-cards .card {

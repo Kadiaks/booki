@@ -70,7 +70,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 93%;
     height: 64px;
     margin-left: 50px;
     margin-right: 50px;
@@ -104,7 +104,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    width: 90%;
+    width: 93%;
 }
 
 .headline h1 {
@@ -124,6 +124,7 @@ a {
     border-radius: 15px;
     height: 49px;
     background: #FFF;
+    border: 1px solid #F2F2F2;
 }
 
 .search-bar span {
@@ -149,11 +150,12 @@ a {
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-size: 16px;
     font-weight: 700;
     height: 49px;
     width: 100%;
     border: none;
-    padding: 0 0;
+    padding: 0 10px;
     margin-bottom: 0;
 }
 
@@ -166,11 +168,14 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 14px;
     font-weight: 700;
     height: 49px;
+    padding: 15px 16px;
     border-radius: 0px 15px 15px 0px;
-    border: 1px solid #0065FC;
     background: #0065FC;
+    border: 0;
+    outline: 1px solid #F2F2F2;
 }
 
 .search-bar button .fa-solid {
@@ -188,7 +193,7 @@ a {
 
 .filterbar span {
     display: flex;
-    font-size: 2em;
+    font-size: 16px;
     font-weight: 700;
     gap: 30px;
 }
@@ -196,16 +201,17 @@ a {
 .filterbar .bouton {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 15px;
 }
 
 .filterbar button {
     font-weight: bold;
     display: flex;
-    padding: 4px 19px;
+    padding: 6px 19px;
     align-items: center;
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 700;
+    height: 50px;
     gap: 10px;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
@@ -262,11 +268,6 @@ main {
     box-sizing: border-box;
 }
 
-.boxes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 /****** Hebergements ***********/
 .hebergements {
@@ -283,7 +284,7 @@ main {
     margin-bottom: 0;
 }
 
-.hebergements .conteneur {
+.hebergements .container {
     display: grid;
     grid-template-columns: 30% 30% 30%;
     padding: 30px;
@@ -293,7 +294,9 @@ main {
 }
 
 .hebergements .card {
+    height: 235px;
     box-sizing: border-box;
+    box-shadow: 0px 1px 10px 0px;
 }
 
 .hebergements img {
@@ -302,22 +305,31 @@ main {
     border-top-right-radius: 20px;
     box-sizing: border-box;
     width: 100%;
-    height: 120px;
+    height: 130px;
 }
 
 .hebergements .card-content {
-    width: 100%;
-    height: 118px;
-    padding-left: 15px;
+    width: 95%;
+    height: auto;
+    position: relative;
+    padding-left: 10px;
     flex-direction: row;
-    justify-content: space-between;
-    box-sizing: border-box;
+}
+
+.hebergements-cards .card-txt {
+    height: 75px;
 }
 
 .hebergements .card-title {
     font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin: 3px 0;
+    line-height: 18px;
+}
+
+.hebergements .card-subtitle {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .hebergements .card-subtitle .euro {
@@ -325,7 +337,10 @@ main {
 }
 
 .hebergements .card-rating {
-    margin-bottom: 5px;
+    font-size: 13px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    position: absolute;
 }
 
 
@@ -344,12 +359,13 @@ main {
 .populaires-cards .card {
     display: flex;
     margin: 30px;
-    height: 170px;
+    height: 150px;
+    box-shadow: 0px 1px 10px 0px;
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 170px;
+    height: 149px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -361,7 +377,11 @@ main {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    height: 130px;
+    height: 138px;
+}
+
+.populaires-cards .card-txt {
+    height: 125px;
 }
 
 .populaires-cards .card-title {
@@ -371,6 +391,7 @@ main {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    
 }
 
 
@@ -389,7 +410,6 @@ main {
 .activites-cards {
     display: flex;
     justify-content: flex-start;
-    width: 94%;
     height: auto;
     padding: 0 30px;
     gap: 30px;
@@ -400,7 +420,7 @@ main {
     flex-direction: column;
     width: 25%;
     height: 435px;
-    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    border:1px solid transparent;
 }
 
 .activites .card {
@@ -433,12 +453,13 @@ footer {
     margin: 0 50px;
 }
 
-.conteneur {
+footer .conteneur {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-self: stretch;
     background-color: #F2F2F2;
+    padding: 20px;
 }
 
 h3 {
