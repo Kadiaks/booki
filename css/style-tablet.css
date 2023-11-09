@@ -102,7 +102,7 @@
         width: 90%;
     }
 
-    .id .hebergements {
+    .hebergements {
         display: flex;
         margin-bottom: 50px;
         width: 100%;
@@ -129,7 +129,7 @@
         height: 92px;
     }
     
-    .id .populaires {
+    .populaires {
         margin-top: 50px;
     }
 

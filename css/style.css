@@ -22,6 +22,7 @@ body {
     margin: auto;
     align-items: flex-start;
     gap: 35px;
+    border: 2px solid black;
 }
 
 .main-container {
@@ -87,7 +88,6 @@ a {
     align-items: center;
     gap: 65px;
     height: 19px;
-    width: 100%;
 }
 
 .menu a {
@@ -103,8 +103,8 @@ a {
 .main-container {
     display: flex;
     flex-direction: column;
-    gap: 35px;
     width: 93%;
+    gap: 35px;
 }
 
 .headline h1 {
@@ -257,12 +257,9 @@ main {
     margin: 0 50px;
 }
 
-.hebergements-and-populaires {
+.hebergements-and-populaires section {
     display: flex;
     justify-content: space-between;
-}
-
-.hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     box-sizing: border-box;
@@ -346,6 +343,8 @@ main {
 
 /****** Populaires ***********/
 .populaires {
+    display: flex;
+    flex-direction: column;
     width: 32%;
 }
 
@@ -391,7 +390,6 @@ main {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
-    
 }
 
 

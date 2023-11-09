@@ -187,7 +187,7 @@ main {
     box-sizing: border-box;
 }
 
-.id .hebergements {
+.hebergements {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -216,7 +216,7 @@ main {
     width: 100%;
 }
 
-.id .populaires {
+.populaires {
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
