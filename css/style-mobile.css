@@ -12,8 +12,14 @@ html, body {
 body {
     display: block;
     margin: auto;
-    max-width: 767px;
     background-color: aqua;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 767px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 /****** Header ***********/   
@@ -46,7 +52,6 @@ nav {
     justify-content: space-around;
     align-content: stretch;
     padding-top: 0;
-    margin-left: 0;
     border-bottom: 3px solid #DEEBFF;
     padding-bottom: 10px;
 }
@@ -54,7 +59,7 @@ nav {
 .menu a {
     display: flex;
     align-items: stretch;
-    padding: 0 20px;
+    padding: 0;
 }
     
 .menu a:hover {
@@ -64,25 +69,25 @@ nav {
     padding-bottom: 15px;
 }
     
-.main-container {
+.headline {
     display: flex;
     flex-direction: column;
-    margin: 35px 20px;
+    margin: 35px 0;
 }
     
-.headline {
+.heading {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.headline h1 {
+.heading h1 {
     margin-top: 0;
     align-self: stretch;
     font-size: 22px;
 }
 
-.headline p {
+.heading p {
     display: flex;
     flex-direction: row;
     margin-top: 0;
@@ -120,7 +125,6 @@ nav {
 .filterbar {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
     
 .filterbar span {
@@ -128,14 +132,12 @@ nav {
     flex-direction: row;
     align-content: flex-start;
     font-size: 1,5em;
-    margin-left: 0;
 }
 
 .filterbar .bouton {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-    margin-left: 0;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
 }
     
 .filterbar button {
@@ -143,7 +145,6 @@ nav {
     flex-direction: row;
     font-size: 16px;
     font-weight: 700;
-    gap: 15px;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
     background-color: white;
@@ -173,25 +174,24 @@ nav {
 
 
 /****** Main ***********/
-main {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
+.hebergements-and-populaires {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .hebergements-and-populaires section {
-    display: flex;
-    flex-direction: column-reverse;
     border-radius: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #FFFFFF;
 }
 
 .hebergements {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #FFFFFF;
+    margin-top: 35px;
+    margin-bottom: 0;
 }
 
 .hebergements h2 {
@@ -206,7 +206,6 @@ main {
     width: 100%;
     padding: 0;
     padding-bottom: 20px;
-    border-radius: 0;
 }
 
 .hebergements .card {
@@ -216,19 +215,18 @@ main {
     width: 100%;
 }
 
-.populaires {
+#populaires {
     background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 35px 0;
+    margin: 0;
     margin-top: 0;
-    border: 2px solid green;
 }
 
 .populaires-title {
     display: flex;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .populaires-cards {
@@ -236,7 +234,7 @@ main {
     box-sizing: border-box;
     width: 100%;
     margin-left: 0;
-    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .populaires-cards .card {
@@ -268,28 +266,25 @@ main {
 .activites {
     display: flex;
     flex-direction: column;
-    
+    margin: 0;
 }
 
-.activites h2 {
-    margin: 30px 10px;
+.activites .h2 {
+    padding: 0;
+    margin: 0;
 }
 
 .activites-cards {
     display: block;
-    width: 100%;
-    margin-bottom: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 0;
 }
 
 .activites-cards a {
-    display: block;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 100%;
+    padding-bottom: 20px;
     height: auto;
-    margin-bottom: 15px;
 }
 
 .activites-cards img {
@@ -298,7 +293,6 @@ main {
     box-sizing: border-box;
     width: 100%;
     height: 165px;
-    object-fit: cover;
 }
 
 
@@ -306,8 +300,8 @@ main {
 footer {
     display: flex;
     flex-direction: column;
+    padding: 0;
     margin: 0;
-    padding: 20px;
 }
 
 footer .conteneur {
@@ -317,13 +311,8 @@ footer .conteneur {
 
 .footer-box {
     display: block;
+    width: 100%;
     padding-left: 0;
-    border: 2px solid yellow;
 }
-
-.footer-box h3 {
-    margin-bottom: 0;
-}
-
 
 }
