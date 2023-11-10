@@ -21,7 +21,6 @@ html, body {
 body {
     display: flex;
     justify-content: center;
-    border: 3px solid black;
 }
 
 .main-container {
@@ -449,7 +448,6 @@ a {
 /****** Footer ***********/
 footer {
     width: 100%;
-    margin-bottom: 30px;
 }
 
 footer .conteneur {

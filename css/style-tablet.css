@@ -10,7 +10,6 @@
         display: flex;
         justify-content: center;
         margin: auto;
-        background-color: fuchsia;
     }
 
     .main-container {
@@ -100,10 +99,11 @@
 
     /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires {
+        display: flex;
         flex-direction: column;
     }
 
-    #hebergements {
+    .hebergements {
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
@@ -169,7 +169,6 @@
 
     /****** Activites ***********/
     .activites {
-        
         display: flex;
         flex-direction: column;
     }
