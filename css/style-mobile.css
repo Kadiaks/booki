@@ -49,24 +49,23 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     padding-top: 0;
+    padding-bottom: 15px;
     align-items: center;
-    padding-bottom: 10px;
 }
 
 .menu a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    width: 50%;
     border-bottom: 3px solid #F2F2F2;
+    padding: 15px;
+    width: 50%;
 }
     
 .menu a:hover {
     border-bottom: 2px solid #0065FC;
     border-top: none;
     color: #0065FC;
-    
 }
     
 .headline {
@@ -143,7 +142,7 @@ nav {
 .filterbar button {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     font-size: 15px;
     font-weight: 600;
     border-radius: 25px;
