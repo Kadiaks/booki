@@ -130,7 +130,6 @@ nav {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
-    font-size: 1,5em;
 }
 
 .filterbar .bouton {
@@ -164,7 +163,6 @@ nav {
     display: flex;
     width: 18px;
     font-size: 18px;
-    content: #0065FC;
     border-radius: 50%;
 }
 
@@ -215,7 +213,6 @@ nav {
 }
 
 #populaires {
-    background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     width: 100%;
