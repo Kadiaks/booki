@@ -312,10 +312,11 @@ a {
     position: relative;
     padding-left: 10px;
     flex-direction: row;
+    height: 100px;
 }
 
 .hebergements-cards .card-txt {
-    height: 75px;
+    height: 70px;
 }
 
 .hebergements .card-title {
@@ -335,10 +336,9 @@ a {
 }
 
 .hebergements .card-rating {
-    font-size: 13px;
-    margin-top: 15px;
+    font-size: 14px;
+    margin-top: 20px;
     margin-bottom: 8px;
-    position: absolute;
 }
 
 
@@ -378,11 +378,11 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    height: 138px;
+    
 }
 
 .populaires-cards .card-txt {
-    height: 125px;
+    height: 105px;
 }
 
 .populaires-cards .card-title {
@@ -392,6 +392,7 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 
