@@ -217,6 +217,7 @@ nav {
     flex-direction: column;
     width: 100%;
     margin-top: 0;
+    background-color: var(--main-bg-color);
 }
 
 .populaires-title {
