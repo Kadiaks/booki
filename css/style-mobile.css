@@ -241,15 +241,18 @@ nav {
 
 .populaires-cards img {
     display: flex;
+    width: 45%;
     height: auto;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 .populaires-cards .card-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: 40px;
 }
 
 .populaires-cards .card-rating {
